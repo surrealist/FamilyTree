@@ -159,6 +159,7 @@ namespace GF.Mvc01.Facts.Models {
       }
 
       [Fact]
+      
       public void FamilyHasHusbandAndWife() {
         Person p1 = new Person() { Gender = "M" };
         Person p2 = new Person() { Gender = "F" };
