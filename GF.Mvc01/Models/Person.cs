@@ -55,7 +55,21 @@ namespace GF.Mvc01.Models {
       if (this.Gender == spouse.Gender) {
         throw new Exception();
       }
+
+      
       Family f = new Family();
+      this.Family = f;
+      spouse.Family = f;
+
+      if (this.Gender == "M") {
+        f.Husband = this;
+        f.Wife = spouse;
+      }
+      else {
+        f.Husband = spouse;
+        f.Wife = this;
+      }
+
       return f;
     }
   }
