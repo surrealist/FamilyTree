@@ -23,7 +23,7 @@ namespace GF.Mvc01.Facts.Controllers {
           .Returns(new List<Person>() {
             new Person() { Id =1, Name = "Mr.A", Gender = "M", BirthYear=1900 },
             new Person() {Id=2, Name="Ms.B", Gender="F",BirthYear = 1905}
-          });        
+          }.AsQueryable());        
         var c = new PersonController(repo.Object);
         var result = c.Index() as ViewResult;
         Assert.NotNull(result.Model);
@@ -32,6 +32,19 @@ namespace GF.Mvc01.Facts.Controllers {
         repo.Verify(x => x.GetAllPeople());
         Assert.Equal(2, ((List<Person>)(result.Model)).Count);
       }
+    }
+
+    public class TheGetAllPossibleSpousesMethod {
+      [Fact]
+      public void ShouldReturnValidSpourses() {
+        var repo = new Mock<IPersonRepo>();
+        
+        var c = new PersonController();
+
+      }
+    }
+    public class TheMarryAction {
+    
     }
   }
 }

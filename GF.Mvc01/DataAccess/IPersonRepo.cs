@@ -6,7 +6,7 @@ using GF.Mvc01.Models;
 
 namespace GF.Mvc01.DataAccess {
   public interface IPersonRepo {
-    List<Person> GetAllPeople();
+    IQueryable<Person> GetAllPeople();
     int Add(Person p);
     Person GetById(int id);
     void Update(Person p);

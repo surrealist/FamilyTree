@@ -9,12 +9,12 @@ namespace GF.Mvc01.DataAccess {
 
   public class PersonRepo : IPersonRepo {
 
-    public List<Models.Person> GetAllPeople() {
+    public IQueryable<Models.Person> GetAllPeople() {
       using (var db = new FamilyContext()) {
         var q = from p in db.People
                 select p;
 
-        return q.ToList();
+        return q;
       }
     }
     public int Add(Person p) {

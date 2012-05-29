@@ -19,7 +19,7 @@ namespace GF.Mvc01.Controllers {
     }
 
     public ActionResult Index() {
-      var people = repo.GetAllPeople();
+      var people = repo.GetAllPeople().ToList();
       return View(people);
     }
 
