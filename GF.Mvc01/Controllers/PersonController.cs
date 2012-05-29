@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GF.Mvc01.DataAccess;
+using GF.Mvc01.Models;
 
 namespace GF.Mvc01.Controllers {
   public class PersonController : Controller {
-    //
-    // GET: /Person/
+    private IPersonRepo repo;
+    public PersonController(IPersonRepo repo) {
+      this.repo = repo;
+    }
 
     public ActionResult Index() {
-      return View();
+      var people = repo.GetAllPeople(); 
+      return View(people);
     }
 
   }

@@ -8,3 +8,6 @@ C:\MvcWorkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\xunit.xml
 C:\MvcWorkshop2\GF.Mvc01\GF.Mvc01.Facts\obj\Debug\GF.Mvc01.Facts.csprojResolveAssemblyReference.cache
 C:\MvcWorkshop2\GF.Mvc01\GF.Mvc01.Facts\obj\Debug\GF.Mvc01.Facts.dll
 C:\MvcWorkshop2\GF.Mvc01\GF.Mvc01.Facts\obj\Debug\GF.Mvc01.Facts.pdb
+C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.dll
+C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.pdb
+C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.xml
