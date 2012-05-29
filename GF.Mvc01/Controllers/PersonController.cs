@@ -72,5 +72,16 @@ namespace GF.Mvc01.Controllers {
       Person p = repo.GetById(id);
       return View(p);
     }
+
+    [NonAction]
+    public List<Person> GetAllPossibleSpouses(int id) {
+      return null;
+    }
+
+    [HttpPost]
+    public ActionResult Marry(int p1, int p2) {
+      return null;
+    }
+
   }
 }
