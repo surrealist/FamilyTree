@@ -5,6 +5,9 @@ using System.Web;
 
 namespace GF.Mvc01.Models {
   public class Family {
+
+    public int Id { get; set; }
+
     public string Name { get; set; }
     public Person Husband { get; set; }
     public Person Wife { get; set; }

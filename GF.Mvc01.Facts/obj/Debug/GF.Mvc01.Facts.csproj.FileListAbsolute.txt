@@ -11,3 +11,5 @@ C:\MvcWorkshop2\GF.Mvc01\GF.Mvc01.Facts\obj\Debug\GF.Mvc01.Facts.pdb
 C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.dll
 C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.pdb
 C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\Moq.xml
+C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\EntityFramework.dll
+C:\mvcworkshop2\GF.Mvc01\GF.Mvc01.Facts\bin\Debug\EntityFramework.xml

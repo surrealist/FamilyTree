@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace GF.Mvc01.Models {
   public class Person {
+
+    // ID, Id, PersonId
     public int Id { get; set; }
 
     public Family Family { get; set; }
@@ -13,6 +16,8 @@ namespace GF.Mvc01.Models {
     public string Name { get; set; }
 
     private string _Gender;
+
+    [Display(Name="เพศ")]
     public string Gender {
       get {
         return _Gender;
@@ -22,7 +27,7 @@ namespace GF.Mvc01.Models {
           _Gender = value;
         }
         else {
-          throw new Exception();
+          throw new Exception("Invalid gender");
         }
       }
     }
@@ -71,6 +76,16 @@ namespace GF.Mvc01.Models {
       }
 
       return f;
+    }
+
+    public override bool Equals(object obj) {
+      Person anotherPerson = obj as Person;
+      return (this.Name == anotherPerson.Name
+        && this.Gender == anotherPerson.Gender
+        && this.BirthYear == anotherPerson.BirthYear);
+    }
+    public override int GetHashCode() {
+      return this.Id; //  base.GetHashCode();
     }
   }
 
